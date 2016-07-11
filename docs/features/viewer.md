@@ -35,3 +35,5 @@ Each result item can be clicked as a filter, after click, filter will display on
 ### Detail popup window
 - Display all fields
 - Display sub links
+
+![Viewer screen shot](img/viewer1.png)

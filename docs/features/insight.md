@@ -26,3 +26,5 @@ As business requirement, create different groups as tabs.
 
 #### Signe Graph view
 Click each Graph's title, get a single view to display this Grpah with detail data.
+
+![Viewer screen shot](img/insight1.png)

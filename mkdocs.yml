@@ -11,3 +11,7 @@ pages:
     - Graph: features/graph.md
     - Adapter: features/adpater.md
 - Troubleshooting: troubleshooting.md
+
+theme: flatly
+
+extra_css: [hpe.css]

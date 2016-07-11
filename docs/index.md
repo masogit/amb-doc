@@ -2,6 +2,8 @@
 
 AMB is a light weight UI which leverage REST APIs layer to pull data from Asset manager and simplifies the end user data consumption of ITAM data.
 
+![Viewer screen shot](features/img/insight1.png)
+
 ### Installation
 
 AMB has two services:
