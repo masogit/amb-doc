@@ -1,22 +1,27 @@
-# AM Browser 
+# AM Browser online document
 
 AMB is a light weight UI which leverage REST APIs layer to pull data from Asset manager and simplifies the end user data consumption of ITAM data.
 
-### Installation 
+### Installation
 
-###### AM Browser Node Service
+AMB has two services:
 
-###### AM REST Service
+- AM Browser Service: provide UI
+- AM REST Service: provide AM fundamental data service
+
+Go Installation in header to see detail
 
 ### Configuration
 
-After install AM Browser node service and REST service (optional), you should configure am-browser-config.properties. (copy properties from am-browser-config.properties.default)
+After install AM Browser service and REST service (optional), you should configure am-browser-config.properties. (copy properties from am-browser-config.properties.default)
 
-###### AM Broser Node Service
+##### AM Broser Service
+
 - Both HTTP and HTTPS enabled (For secuirty reason, recommend disable HTTP)
 - Overwrite orginazition certificate files in ./ssh folder
 
-###### AM REST Service
+##### AM REST Service
+
 Specify AM REST Server and port in properties file
 
 ```
@@ -31,15 +36,16 @@ jwt_max_age = 60
 ```
 
 
-###### User Rights
+##### User Rights
 AM Browser has 3 roles in properties file: Admin, Power user and Guest
+
 ```
 [user]
 admin = @admin, SAM_Manager, Finance_manager
 power = Full_WriteAccess, Power_leveraged_user
 guest = @anyone
 ```
-###### Slack
+##### Slack
 AM Browser support send message to Slack.com
 
 Confiure url and channel name in properties file, then Slack function works.
@@ -49,7 +55,7 @@ Confiure url and channel name in properties file, then Slack function works.
 channel = #betaprogram
 ```
 
-###### UCMDB
+##### UCMDB
 
 AM Browser have two features related UCMDB:
 
@@ -64,27 +70,7 @@ browser_port = 8080
 browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=en#widget=properties;refocus-selection=
 ```
 
-### Achitecture
-###### Protocol and communication
-AM Browser retrieves AM REST Service
-
-```
-sequenceDiagram
-Browser->>REST: Schema
-Browser->>REST: Record
-Browser->>REST: AQL
-REST->>Browser: JSON data
-```
-
-###### User and Rights
-User login and get AM Browser's role
-```
-sequenceDiagram
-Login->>Token: @anyone 
-Token->>bAdmin: @admin
-bAdmin->>Profile: profiles list
-```
-
+##### User and Rights
 Default AM Browser roles and AM profiles mapping
 
 AM Browser roles | AM profiles
@@ -104,3 +90,5 @@ Guest user | @anyone
 - Builder
 - Graph
 - Adapter
+
+Go Features in header to see detail
