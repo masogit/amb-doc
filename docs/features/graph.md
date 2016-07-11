@@ -6,7 +6,7 @@ Graph module provide data query, statistics and visual graph features. Admin use
 - Meter
 - Distribution
 
-Each Gromment component have several sub types:
+Each Grommet component have several sub types:
 
 ##### Chart
 
