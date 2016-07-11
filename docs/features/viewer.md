@@ -9,24 +9,29 @@ User access a view then query data from AM REST service. Below are areas in View
 - Table
 - Detail and links
 
-#### Header
+### Header
 - Title
 - Seach and filter box
 - Record counts and retrun time
 
-#### Menu
+### Menu
 - Group by and fitlers
-- Vertical Graph toggle
+- Vertical / horizontal Graph toggle
 - AQL enable toggle
 - Full column toggle
 - Export and download
+    - Download in background
+    - Default download manager of browsers (IE, FF, Chrome...)
 
-#### Table
+> In viewer, you may easy to select a field as group by condition, then see the aggregation results.
+Each result item can be clicked as a filter, after click, filter will display on top of record list.
+
+### Table
 - Header and order by
 - Record column
     - Default 5 columns
     - Click record to show detail
 
-#### Detail popup window
-- All fields
-- Links
+### Detail popup window
+- Display all fields
+- Display sub links
