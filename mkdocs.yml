@@ -10,4 +10,4 @@ pages:
     - Builder: features/builder.md
     - Graph: features/graph.md
     - Adapter: features/adpater.md
-
+- Troubleshooting: troubleshooting.md
