@@ -1,0 +1,13 @@
+site_name: AM Browser Online Document
+
+pages:
+- Overview: index.md
+- Installation: installation.md
+- Features:
+    - Search: features/search.md
+    - Insight: features/insight.md
+    - Viewer: features/viewer.md
+    - Builder: features/builder.md
+    - Graph: features/graph.md
+    - Adapter: features/adpater.md
+
