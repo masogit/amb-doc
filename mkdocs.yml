@@ -17,6 +17,6 @@ pages:
 - Slack: slack.md
 - Blogs: blogs.md
 
-theme: readthedocs
+theme_dir: 'flatly'
 
 extra_css: [hpe.css]
