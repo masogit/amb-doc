@@ -65,7 +65,3 @@ HPE AM team will update the installation files once another stable version is av
     - Folder <am-browser>\db
     - Tomcat <am-browser-rest>\apache-tomcat-8.0.36\conf\server.xml if it’s modified.
 1. Copy files. Unzip the new package to the correspondent folders, over-writing the old files.
-
-
-### Trouble shooting
-
