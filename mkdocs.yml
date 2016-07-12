@@ -1,4 +1,4 @@
-site_name: Asset Manager Browser 1.0
+site_name: Asset Manager Browser
 site_favicon: favicon.ico
 site_author: shuo.man@hpe.com
 
@@ -13,6 +13,9 @@ pages:
     - Graph: features/graph.md
     - Adapter: features/adpater.md
 - Troubleshooting: troubleshooting.md
+- FAQ: faq.md
+- Slack: slack.md
+- Blogs: blogs.md
 
 theme: readthedocs
 

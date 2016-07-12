@@ -41,6 +41,8 @@ jwt_max_age = 60
 ##### User Rights
 AM Browser has 3 roles in properties file: Admin, Power user and Guest
 
+Guest licenses are mininal requirement
+
 ```
 [user]
 admin = @admin, SAM_Manager, Finance_manager

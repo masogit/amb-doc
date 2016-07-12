@@ -1,5 +1,5 @@
 
-### Node Server:
+### Node Server
 In case `http://<node_server_ip>:8888` does not work
 
 1.	Open command windows and type `services.msc`, check there is a service which name is `am-browser-service` and make sure it's status is running
@@ -13,7 +13,7 @@ Correct log message shows as below:
 {"level":"info","message":"[server] App listening HTTP on port 8888","timestamp":"2016-07-08T06:07:03.876Z"}
 ```
 
-### Rest Server:
+### Rest Server
 
 If the Node server is started up, but you cannot login with correct username and password, it might be wrong for Rest Server.
 
@@ -22,4 +22,11 @@ If the Node server is started up, but you cannot login with correct username and
 3.	Go to `<Rest_Server_DIR>\apache-tomcat-8.0.18\logs` and open `stdout.log` or `stderr.log` for detail information.
 
 If you still cannot figure out what`s wrong with your configuration, please package your Node Log and Rest Log and send to ambsupport@hpe.com or send to AM Browser team
+
+### Installation
+1. Log file folders
+    - AM Rest Server: <am-browser-rest>\apache-tomcat-8.0.36\logs
+    - AM Browser Server: <am-browser>\log
+1. As for DSN setup, please refer to AM’s installation guide.
+1. If you deploy REST server war again please make sure you unregister previous service and register new service again.
 
