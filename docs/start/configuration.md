@@ -2,7 +2,7 @@
 
 After install AM Browser service and REST service (optional), you should configure am-browser-config.properties. (copy properties from am-browser-config.properties.default)
 
-### AM Broser Service
+### AM Browser Service
 
 - Both HTTP and HTTPS enabled (For secuirty reason, recommend disable HTTP)
 - Overwrite orginazition certificate files in ./ssh folder
@@ -18,10 +18,10 @@ server = localhost
 port = 10081
 base = /AssetManagerWebService/rs
 version = /v1
-# 60 minutes
 jwt_max_age = 60
 ```
 
+> `base`, `version` should not be changed normally. `jwt_max_age` is the AM REST token expire time.
 
 ### User Rights
 AM Browser has 3 roles are configured in `am-browser-config.properties` file: Admin, Power user and Guest.
@@ -48,7 +48,7 @@ Power user and Guest user support to configure AM user profile name. It
 > Guest licenses are mininal requirement
 
 ### Slack
-AM Browser support send message to Slack.com
+AM Browser support send message to channel of Slack.com
 
 Confiure url and channel name in properties file, then Slack function works.
 ```
@@ -61,7 +61,7 @@ channel = #betaprogram
 
 AM Browser have two features related UCMDB:
 
-- Adpater: Monitor AM Adapters status
+- Adpater: Monitor UCMDB Adapters status
 - UCMDB Browser: Open specified UCMDB Browser to federate CI info (Need push UCMDB CI with global_id
 
 ```
@@ -71,3 +71,7 @@ browser_server = ucmdbhost
 browser_port = 8080
 browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=en#widget=properties;refocus-selection=
 ```
+
+`adapter` set to `false` will disable UCMDB adapter monitor from AM Browser.
+
+When `GlobalId` field is added in Viewer, in detail page, you will see a link on GlobalId to open `UCMDB Browser`.
