@@ -35,6 +35,12 @@ a:hover, a:focus {
     background-color: transparent;
 }
 
+code {
+    background: transparent;
+    border: 0 none;
+    color: #008080;
+}
+
 /* readthedocs*/
 .wy-side-nav-search {
     background-color: #01A982;
