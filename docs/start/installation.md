@@ -49,8 +49,8 @@ For Asset Manager 9.5x Support Matrix, see [https://softwaresupport.hpe.com/grou
 
 ### Installation of AM Browser Service for the first time:
 
-1. Unzip files. Unzip am-browser-0.1.xxxx.zip to a folder, for example, am-browser. 
-1. Configure the server settings. Duplicate the am-browser-config.properties.default file and rename the copy as am-browser-config.properties. In the am-browser-config.properties file, make sure the port (8080 by default) is set correctly and not occupied by other running processes.
+1. Unzip files. Unzip `am-browser-0.1.xxxx.zip` to a folder, for example, am-browser. 
+1. Configure the server settings. Duplicate the `am-browser-config.properties.default` file and rename the copy as `am-browser-config.properties`. In the `am-browser-config.properties` file, make sure the port (`8080` by default) is set correctly and not occupied by other running processes.
 1. Windows service registration
     - Register: Run `0_registerService.bat` with Administrator rights, and a service named `HPE am-browser-service` is created.
     - Unregister service. Run `3_unregisterService.bat` with Administrator rights to unregister the service.
