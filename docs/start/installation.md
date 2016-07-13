@@ -1,5 +1,10 @@
 # AM Browser Installation
 
+AM Browser has two services:
+
+- AM Browser Service that provides UI
+- AM REST Service that provides AM fundamental data service
+
 ### Pre-requisite：
 - JDK: Java7 or Java8 64bits
 - OS: Windows server
