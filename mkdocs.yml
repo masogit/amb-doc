@@ -4,7 +4,11 @@ site_author: shuo.man@hpe.com
 
 pages:
 - Overview: index.md
-- Installation: installation.md
+- Getting Started: 
+    - Installation: start/installation.md
+    - Configuration: start/configuration.md
+    - Troubleshooting: start/troubleshooting.md
+    - FAQ: start/faq.md
 - Features:
     - Search: features/search.md
     - Insight: features/insight.md
@@ -12,8 +16,6 @@ pages:
     - Builder: features/builder.md
     - Graph: features/graph.md
     - Adapter: features/adpater.md
-- Troubleshooting: troubleshooting.md
-- FAQ: faq.md
 - Slack: slack.md
 - Blogs: blogs.md
 
