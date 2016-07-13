@@ -24,16 +24,29 @@ jwt_max_age = 60
 
 
 ### User Rights
-AM Browser has 3 roles in properties file: Admin, Power user and Guest
-
-Guest licenses are mininal requirement
+AM Browser has 3 roles are configured in `am-browser-config.properties` file: Admin, Power user and Guest.
 
 ```
 [user]
-admin = @admin, SAM_Manager, Finance_manager
-power = Full_WriteAccess, Power_leveraged_user
+admin = @admin
+power = SAM_Manager, Finance_manager
 guest = @anyone
 ```
+
+`@admin` means users have AM administration right.  **Currently, AM Browser's Admin should be configured @admin.**
+
+`@anyone` means users at least have guest licenses.
+
+AM Browser roles | AM profiles
+---|---
+Admin | @admin
+Power user | AM profile1, AM profile2, ...
+Guest user | @anyone
+
+Power user and Guest user support to configure AM user profile name. It
+
+> Guest licenses are mininal requirement
+
 ### Slack
 AM Browser support send message to Slack.com
 
@@ -58,12 +71,3 @@ browser_server = ucmdbhost
 browser_port = 8080
 browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=en#widget=properties;refocus-selection=
 ```
-
-### User and Rights
-Default AM Browser roles and AM profiles mapping
-
-AM Browser roles | AM profiles
----|---
-Admin | @admin
-Power user | AM profile1, AM profile2
-Guest user | @anyone
