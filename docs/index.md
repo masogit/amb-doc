@@ -1,18 +1,19 @@
 # Asset Manager Browser online document
 
-Asset Manager Browser (AMB) is a lightweight UI that leverages RESTful APIs layer to pull data from Asset Manager and simplifies the end user data consumption of ITAM data.
+Asset Manager Browser (AMB) is a lightweight UI that leverages RESTful API layer to pull data from Asset Manager and simplifies the end user data consumption of ITAM data.
 
 ![Viewer screen shot](features/img/insight1.png)
 
-### Installation
+### How to install
 
 AMB has two services:
 
-- AM Browser Service: provide UI
-- AM REST Service: provide AM fundamental data service
+- AM Browser Service that provides UI
+- AM REST Service that provides AM fundamental data service
 
-Go Installation in header to see detail
+For more information about how to install AMB, see Installation.
 
 ### Features
 
+AMB provides you with the following features.
 ![Features](img/features1.png)
