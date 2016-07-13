@@ -1,17 +1,13 @@
 # AM Browser Installation
 
-AM Browser has two services:
+### Prerequisite：
 
-- AM Browser Service that provides UI
-- AM REST Service that provides AM fundamental data service
+AM Browser functions on top of Asset Manager 9.5x and 9.60. Before the installation, make sure that your AM Browser server complies with the specifications in AM 9.5x and AM 9.60 support matrices. 
+See https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM02417964 for Asset Manager 9.60 Support Matrix.
+See https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310 for Asset Manager 9.5x Support Matrix.
 
-### Pre-requisite：
-- JDK: Java7 or Java8 64bits
-- OS: Windows server
-- Browser: IE11/FF/Chrome
-- Windows Administrator privilege
+### Installation of AM REST Service for the first time:
 
-### Installation of AM Rest Server for the first time:
 1. Preparation. 
 
     It is recommended to install AM Browser to a server on which either AM Windows Client or AM Web Service installed and could connect to AM DB, the configuration of ODBC(64bits) can be re-used to install Rest Server.
