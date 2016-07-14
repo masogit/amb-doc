@@ -36,10 +36,9 @@ guest = @anyone
 
 `@admin` stands for users who have AM administration rights.  **In this version of AM Browser, AM Browser Admin can only be @admin.**
 
-<AM user profile> can be an AM user profile, for example, SAM_Manager, Finance_manager.
-
 `@anyone` stands for all AM users including the guest users.
 
+You can assign one or several AM user profiles to `power` or `guest`, for example, SAM_Manager, Finance_manager.
 
 ### The [slack] section
 AM Browser allows you to send message to the channel of Slack.com.
