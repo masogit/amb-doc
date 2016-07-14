@@ -5,40 +5,35 @@ The Graph module provides data query, statistics and visual graph features. Admi
 ### Graph styles and designer
 Currently, there are 3 types of Graph with designer. These graphs are built with original Grommet components, each Grommet component has several sub types:
 
-- Chart
-    - Bar
-    - Line
-    - Area
-- Meter
-    - Bar
-    - Arc
-    - Circle
-    - Spiral
+- Chart: Bar, Line, Area
+- Meter: Bar, Arc, Circle, Spiral
 - Distribution
 
 > Only aggregation AQL query data can be configured in Graph designer
 
 ### AQL data and configuration
 
-Admin user input AQL: 
+Admin user input aggregation AQL, like: `select seBasis, count(*) from amNature group by seBasis`
 
 - Preview
 - Load from existing AM Widgets
 - Configure Graph form
 - Link to a view
 
+#### Load widgets
+It allows to import existing In Tool Report AQL from AM server directly.
+
 #### Preview
 
-Input AQL then preview, you will see a table as the result. It should have some columns:
+After input aggregation AQL then preview, you will get a table display query result. It should have some columns:
 
 > It is suggested to have the first column as the group by field and the second column as count(*) or sum(<field name>).
 
-#### Load widgets
-
-
 #### Configure Graph designer
 
-- Column (mandatory)
+After get a query result table with some columns,  you can create a graph from Graph designer. Specify **`Column`** of Graph designer from one of columns in the query result table.
+
+- **Column** (mandatory)
 - label (mandatory if link to view)
     - X Axis label in Chart
     - Column units in Meter

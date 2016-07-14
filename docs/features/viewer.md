@@ -15,10 +15,13 @@ User can access a view and then query data from AM REST service. Below are areas
     - Quick search
         - Input without pressing enter: Filter from front-end records
         - Input by pressing enter: Filter from back-end (**View must have defined searchable fields**)
-    - AQL advanced search
+    - Advanced search (Input AQL filters)
         - Enable or disable toggle from menu
         - Enable or disable toggle by input '/' as first character
         - Display added AQL filters below the input box
+
+        Sample: `Name like '%ABC%' or AssetTag like'123ABC%'`
+
 - Record number and return time
     - Records number
         - Number of current of front-end records
