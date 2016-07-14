@@ -1,6 +1,6 @@
 # AM Browser Installation
 
-### Prerequisite：
+### Prerequisite
 
 AM Browser functions on top of Asset Manager 9.5x and 9.60. Before the installation, make sure that your AM Browser server complies with the specifications in AM 9.5x and AM 9.60 support matrices. 
 
@@ -8,7 +8,7 @@ For Asset Manager 9.60 Support Matrix, see [https://softwaresupport.hpe.com/grou
 
 For Asset Manager 9.5x Support Matrix, see [https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310](https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310).
 
-### Installation of AM REST Service for the first time:
+### Installation of AM REST Service for the first time
 
 1. Preparation. 
 
@@ -47,7 +47,7 @@ For Asset Manager 9.5x Support Matrix, see [https://softwaresupport.hpe.com/grou
 1. Start/Stop the REST Service. Run `4_startRestService.bat` to start the service and `5_stopRestService.bat` to stop the service.
 
 
-### Installation of AM Browser Service for the first time:
+### Installation of AM Browser Service for the first time
 
 1. Unzip files. Unzip `am-browser-0.1.xxxx.zip` to a folder, for example, am-browser. 
 1. Configure the server settings. Duplicate the `am-browser-config.properties.default` file and rename the copy as `am-browser-config.properties`. In the `am-browser-config.properties` file, make sure the port (`8080` by default) is set correctly and not occupied by other running processes.

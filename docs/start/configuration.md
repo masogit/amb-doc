@@ -1,6 +1,6 @@
-# AM Browser Configuration
+# AM Browser configuration
 
-After install AM Browser service and REST service (optional), you should configure am-browser-config.properties. (copy properties from am-browser-config.properties.default)
+After you install AM Browser service and REST service (optional), you need to configure am-browser-config.properties. (copy properties from am-browser-config.properties.default)
 
 ### AM Browser Service
 
