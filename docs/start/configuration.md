@@ -1,15 +1,15 @@
 # AM Browser configuration
 
-After you install AM Browser service and REST service (optional), you need to configure am-browser-config.properties. (copy properties from am-browser-config.properties.default)
+After you install AM Browser service and REST service (optional), you need to configure the am-browser-config.properties file (copied from am-browser-config.properties.default).
 
 ### AM Browser Service
 
-- Both HTTP and HTTPS enabled (For secuirty reason, recommend disable HTTP)
-- Overwrite orginazition certificate files in ./ssh folder
+- Both HTTP and HTTPS are supported. For secuirty considerations, we recommend that you disable HTTP.
+- Overwrite orginazition certificate files in the ./ssh folder.
 
 ### AM REST Service
 
-Specify AM REST Server and port in properties file
+Specify the AM REST Server and port in the properties file as shown below.
 
 ```
 [rest]
@@ -21,10 +21,10 @@ version = /v1
 jwt_max_age = 60
 ```
 
-> `base`, `version` should not be changed normally. `jwt_max_age` is the AM REST token expire time.
+> `base` and `version` should not be changed normally. `jwt_max_age` is the AM REST token expire time.
 
 ### User Rights
-AM Browser has 3 roles are configured in `am-browser-config.properties` file: Admin, Power user and Guest.
+AM Browser has 3 user roles configured in `am-browser-config.properties` file: Admin, Power user and Guest.
 
 ```
 [user]

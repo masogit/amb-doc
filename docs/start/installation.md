@@ -8,6 +8,13 @@ For Asset Manager 9.60 Support Matrix, see [https://softwaresupport.hpe.com/grou
 
 For Asset Manager 9.5x Support Matrix, see [https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310](https://softwaresupport.hpe.com/group/softwaresupport/search-result/-/facetsearch/document/KM01450310).
 
+### Services
+
+AM Browser has the following two services.
+
+- AM Browser Service that provides user interface
+- AM REST Service that provides AM fundamental data service 
+
 ### Installation of AM REST Service for the first time
 
 1. Preparation. 
