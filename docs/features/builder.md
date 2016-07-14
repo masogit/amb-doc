@@ -11,14 +11,14 @@ Fields and links are selected from AMB Build Schema. When a root table is select
 - 1-1 Links
 - Fields
 
-All fields or 1-1 link's fields will be added in same link. When query data from this view. These fields will query and display together. For example:
+All fields or 1-1 link fields will be added in same link. When query data from this view. These fields will query and display together. For example:
 
 ```
 Root table: 
         amComputer
 Fields:
         CPUType
-        Portfolio.seAssigment
+        Portfolio.seAssignment
         Portfolio.Model.Name
         Portfolio.Brand.Name
 ```
@@ -42,11 +42,11 @@ Field:
 
 ### Functions
 
-Below functions are scoped in one link
+Below functions are in one link
 
 - Searchable
     - Only 2 fields in a link can be set searchable
-    - Prent enter in viewer search box, it will generate AQL filters to query data on this field
+    - Press enter in viewer search box, it will generate AQL filters to query data on this field
     - The searchable fields of root table will be search in Global Search
 - Group by
     - Set default group by field, it will show group by graph when query in viewer
@@ -58,11 +58,15 @@ Below functions are scoped in one link
     - Set Alias name replace label to display in viewer
 - Filter
     - Specify AQL filter condition when query data
-- Sort fileds
+- Sort fields
     - Adjust fields display order
 
 ### Others
 
-- Click each link title, AM schema sidebar will address to table directly.
+- Click each link title, AM schema side bar will address to table directly.
 - Export view definition as json file.
 - Share a view with guest users by send a URL in mail.
+
+Video:
+
+[![Builder video](http://img.youtube.com/vi/pDi3wsiG8kE/0.jpg)](http://www.youtube.com/watch?v=pDi3wsiG8kE "Create an AMB View")
