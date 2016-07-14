@@ -18,9 +18,9 @@ Based on your business requirement, you can create different category as tabs.
 To create a new category, enable the Edit mode and then click Add Tab.
 In the Edit mode, you can also rename a category by double-clicking it.
 
-### Flexiable layout
+### Flexible layout
 
-In the Edit mode, you can create a flexiable layout. Each block can be split by row or column. Then, you can attach a Graph.
+In the Edit mode, you can create a flexible layout. Each block can be split by row or column. Then, you can attach a Graph.
 
 - Split row
 - Split column
@@ -28,6 +28,10 @@ In the Edit mode, you can create a flexiable layout. Each block can be split by 
 - Remove last element
 
 > Removing a function will remove its attached Graph or the last block. Block cannot remove itself.
+
+Video:
+
+[![Filter video](http://img.youtube.com/vi/ZmsFqyBxk1k/0.jpg)](http://www.youtube.com/watch?v=ZmsFqyBxk1k "Group and Filter")
 
 ### Attach Graphs
 
@@ -37,4 +41,4 @@ In the Edit mode, you can attach a Graph to any block that does not have a sub b
 
 ### Single Graph view
 
-Click each Graph's title, get a single view to display this Grpah with details.
+Click each Graph title, get a single view to display this Graph with details.
