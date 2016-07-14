@@ -12,8 +12,8 @@ For Asset Manager 9.5x Support Matrix, see [https://softwaresupport.hpe.com/grou
 
 AM Browser has the following two services.
 
-- AM Browser Service that provides user interface
-- AM REST Service that provides AM fundamental data service 
+- AM Browser Service that provides user interface.
+- AM REST Service that provides AM fundamental data service.
 
 ### Installation of AM REST Service for the first time
 

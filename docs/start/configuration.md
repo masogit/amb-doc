@@ -1,15 +1,16 @@
 # AM Browser configuration
 
-After you install AM Browser service and REST service (optional), you need to configure the am-browser-config.properties file (copied from am-browser-config.properties.default).
+After you install AM Browser service and AM REST service, you need to use your own certificate files to overwrite the following certificate files in the ./ssh folder.
 
-### AM Browser Service
+- server-cert.pem
+- server-csr.pem
+- server-key.pem
 
-- Both HTTP and HTTPS are supported. For secuirty considerations, we recommend that you disable HTTP.
-- Overwrite orginazition certificate files in the ./ssh folder.
+Then, configure the following sections of the am-browser-config.properties file.
 
-### AM REST Service
+### The [rest] section
 
-Specify the AM REST Server and port in the properties file as shown below.
+The [rest] section contains the settings of the AM REST service for AM Browser, it should resemble the following.
 
 ```
 [rest]
@@ -21,48 +22,41 @@ version = /v1
 jwt_max_age = 60
 ```
 
-> `base` and `version` should not be changed normally. `jwt_max_age` is the AM REST token expire time.
+> You do not need to change `base` and `version`. `jwt_max_age` is the AM REST token expire time in minutes.
 
-### User Rights
-AM Browser has 3 user roles configured in `am-browser-config.properties` file: Admin, Power user and Guest.
+### The [user] section
+AM Browser has 3 user roles configured in the `am-browser-config.properties` file: Admin, Power User and Guest.
 
 ```
 [user]
 admin = @admin
-power = SAM_Manager, Finance_manager
+power = <AM user profile>, <AM user profile>
 guest = @anyone
 ```
 
-`@admin` means users have AM administration right.  **Currently, AM Browser's Admin should be configured @admin.**
+`@admin` stands for users who have AM administration rights.  **In this version of AM Browser, AM Browser Admin can only be @admin.**
 
-`@anyone` means users at least have guest licenses.
+<AM user profile> can be an AM user profile, for example, SAM_Manager, Finance_manager.
 
-AM Browser roles | AM profiles
----|---
-Admin | @admin
-Power user | AM profile1, AM profile2, ...
-Guest user | @anyone
+`@anyone` stands for all AM users including the guest users.
 
-Power user and Guest user support to configure AM user profile name. It
 
-> Guest licenses are mininal requirement
+### The [slack] section
+AM Browser allows you to send message to the channel of Slack.com.
 
-### Slack
-AM Browser support send message to channel of Slack.com
-
-Confiure url and channel name in properties file, then Slack function works.
+Confiure the URL and channel name in the [slack] section so that the Slack function works.
 ```
 [slack]
 #url = https://hooks.slack.com/services/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
 channel = #betaprogram
 ```
 
-### UCMDB
+### The [ucmdb] section
 
-AM Browser have two features related UCMDB:
+AM Browser has two features that are related to HPE UCMDB:
 
-- Adpater: Monitor UCMDB Adapters status
-- UCMDB Browser: Open specified UCMDB Browser to federate CI info (Need push UCMDB CI with global_id
+- Adpater: Monitor AM-UCMDB Adapters status
+- UCMDB Browser: Open the specified UCMDB Browser to federate CI information. This feature requires that the UCMDB CI is pushed with global_id.
 
 ```
 [ucmdb]
@@ -72,6 +66,6 @@ browser_port = 8080
 browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=en#widget=properties;refocus-selection=
 ```
 
-`adapter` set to `false` will disable UCMDB adapter monitor from AM Browser.
+Setting `adapter` to `false` will disable UCMDB adapter monitor from AM Browser.
 
-When `GlobalId` field is added in Viewer, in detail page, you will see a link on GlobalId to open `UCMDB Browser`.
+When `GlobalId` field is added in the AMB view, on the detail page, you will see a link on GlobalId to open `UCMDB Browser`.
