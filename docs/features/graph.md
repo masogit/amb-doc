@@ -1,12 +1,12 @@
 # AM Browser Graph
 
-Graph module provide data query, statistics and visual graph features. Admin user input AQL (Asset Manager Query Language) to query data, for those aggregation data, it's easy to configure a kind of Graph to present. There are 3 types of Graph currently (Build with orinial Grommet components):
+The Graph module provides data query, statistics and visual graph features. Admin users can input AQL (Asset Manager Query Language) to query data, for those aggregation data, it is easy to configure a Graph for presenting. There are 3 types of Graph currently (Build with orinial Grommet components):
 
 - Chart
 - Meter
 - Distribution
 
-Each Grommet component have several sub types:
+Each Grommet component has several sub types:
 
 ##### Chart
 
@@ -25,18 +25,18 @@ Each Grommet component have several sub types:
 
 ### AQL data and configuration
 
-Admin user input AQL 
+Admin user input AQL: 
 
 - Preview
-- Load from existing AM In Tool Reports (Widgets)
+- Load from existing AM Widgets
 - Configure Graph form
 - Link to a view
 
 ##### Preview
 
-Input AQL then preview, you will see a table as result. It should have some columns:
+Input AQL then preview, you will see a table as the result. It should have some columns:
 
-> Prefer first column is group by field, second column is count(*) or sum(<field name>)
+> It is suggested to have the first column as the group by field and the second column as count(*) or sum(<field name>).
 
 ##### Load widgets
 
@@ -55,6 +55,6 @@ Input AQL then preview, you will see a table as result. It should have some colu
 
 ##### Link to a view
 
-Graph supports click each element, then popup a page to get record list details. There is a simple rule when you provide AQL:
+If you click an element, a page pops up and shows record list details. There is a simple rule when you provide AQL:
 
 ###### Rules

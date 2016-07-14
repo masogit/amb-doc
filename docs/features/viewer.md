@@ -1,9 +1,9 @@
 # AM Browser Viewer
 
-After Admin user create views, those will display in Viewer module. 
-Power user can access views from Viewer module, Guest user can access a view from URL.
+Views created by Admin are displayed in the Viewer module. 
+Power user can access views from the Viewer module, Guest user can access a view from URL.
 
-User access a view then query data from AM REST service. Below are areas in Views:
+User can access a view and then query data from AM REST service. Below are areas in Views:
 - Header
 - Menu
 - Table
@@ -13,20 +13,18 @@ User access a view then query data from AM REST service. Below are areas in View
 - Title
 - Search and filter box
     - Quick search
-        - Input without press enter: Filter from front end records
-        - Input with press enter: Filter from back end (**View must defined searchable fields**)
+        - Input without pressing enter: Filter from front-end records
+        - Input by pressing enter: Filter from back-end (**View must have defined searchable fields**)
     - AQL advanced search
         - Enable or disable toggle from menu
         - Enable or disable toggle by input '/' as first character
         - Display added AQL filters below the input box
-- Record counts and return time
+- Record number and return time
     - Records number
-        - Current front end records number
-        - Total back end records number
-        - **Click to get next page data (30 records)**
+        - Number of current of front-end records
+        - Total number of back-end records
+        - **Click to get the data on the next page (30 records)**
     - REST return time
-    - Automatically get next page data
-        - Scroll down to end
 
 > For some reason you may click records numbers to get next page data instead of scroll to end 
 
@@ -44,24 +42,27 @@ Each result item can be clicked as a filter, after click, filter will display on
 
 ### Table
 - Header: Fields name and order by
-    - Fields name will display alias name (that defined in view) instead of fields' original label
-    - Click fields name will display ascent or descend icon, and query records from back end 
+    - Fields name will display alias name (that defined in view) instead of fields' original label.
+    - Clicking fields name will display ascent or descend icon, and query records from back end.
 - Column
-    - Default display 5 columns
-    - Click a record to show detail
+    - By default, 5 columns are displayed.
+    - Click a record to show detail.
+
+If you scroll down to the bottom, it automatically gets the data of the next page.
+
 
 ![Viewer screen shot](img/viewer1.png)
 
 ### Detail
-When user click a record, there will be a popup window from right side. In this window, all fields defined in view will be displayed vertically.
-And all 1-M links defined in view will be displayed as a Tab page.
+When a user clicks a record, there will be a popup window from the right side. In this window, all fields defined in view will be displayed vertically.
+And all 1-M links defined in the view will be displayed as a Tab page.
 - Display all fields
 - Display sub links
 
 ![Viewer screen shot](img/detail1.png)
 
 ### Distribution
-AM Browser Viewer provided a colorful and bright distribution graph to display group by statistics. It also provided a fast group by and filter functions. 
+AM Browser Viewer provides a colorful and bright distribution graph to display group by statistics. It also provides a fast group by and filter functions. 
 
 - Distribution Graph
     - Horizontal (default)

@@ -1,17 +1,17 @@
 # AM Browser View Builder
 
-AMB View is a lightweight AM data present layout, Admin users may create and manage view in AMB Builder. Power users may query all views in AMB Viewer. Guests access a view via a URL that shared by Admin users.
+AMB View is a lightweight AM data present layout, Admin users may create and manage views in AMB Builder. Power users can query all views in AMB Viewer. Guests can access a view via a URL that is shared by Admin users.
 
-A view is created from AM schema (raw table),  and a view only have a root table. All fields or links are related from root table.  
+A view is created from AM schema (raw table), and a view only has a root table. All fields or links are related from root table.  
 
 ### Fields and Links
-Fields and links are selected from AMB Build Schema. When a root table is selected, it can not be changed. Fields and links are split into 3 groups:
+Fields and links are selected from AMB Build Schema. When a root table is selected, it cannot be changed. Fields and links are split into 3 groups:
 
 - 1-M Links
 - 1-1 Links
 - Fields
 
-All fields or 1-1 link fields will be added in same link. When query data from this view. These fields will query and display together. For example:
+All fields or 1-1 link's fields will be added in the same link. When querying data from this view, these fields are queryed and displayed together. For example:
 
 ```
 Root table: 
@@ -23,7 +23,7 @@ Fields:
         Portfolio.Brand.Name
 ```
 
-When fields in 1-M Links are selected, there is a new link be created. For example:
+When fields in 1-M Links are selected, a new link is created. For example:
 
 ```
 1-M link:
@@ -42,30 +42,31 @@ Field:
 
 ### Functions
 
-Below functions are in one link
+The following functions are scoped in one link.
 
 - Searchable
-    - Only 2 fields in a link can be set searchable
-    - Press enter in viewer search box, it will generate AQL filters to query data on this field
-    - The searchable fields of root table will be search in Global Search
+    - Only 2 fields in a link can be set to "searchable".
+    - Press Enter in the viewer search box, it will generate AQL filters to query data on this field.
+    - The searchable fields of the root table will be searched in Global Search.
+
 - Group by
-    - Set default group by field, it will show group by graph when query in viewer
+    - Set the default group by field, it will show group by graph when querying in viewer.
 - Sum
-    - If a field set group by, it allows select a number field to sum
+    - If a field has group by, it allows you to select a number field to sum.
 - Order by
-    - Set a field as order by field
+    - Set a field as order by field.
 - Set alias
-    - Set Alias name replace label to display in viewer
+    - Set Alias name to replace the label displayed in the viewer.
 - Filter
-    - Specify AQL filter condition when query data
-- Sort fields
-    - Adjust fields display order
+    - Specify AQL filter condition when query data.
+- Sort fileds
+    - Adjust display order of fields.
 
 ### Others
 
-- Click each link title, AM schema side bar will address to table directly.
+- Click each link title, AM schema sidebar will address the table directly.
 - Export view definition as json file.
-- Share a view with guest users by send a URL in mail.
+- Share a view with guest users by sending a URL in email.
 
 Video:
 

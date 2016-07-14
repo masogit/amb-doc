@@ -1,40 +1,40 @@
 # AM Browser Insight
 
-Insight is a new kind of report, Admin user and Power user can save own personal report. There are two present styles:
+Insight is a new type of report, Admin user and Power user can save their own reports. There are two display styles:
 
 ![Viewer screen shot](img/insight1.png)
 
 ### Display styles
 
-- Carousel: Display Graphs one by one every 10 seconds automatically
-- Deck: Display Graphs in one page, as you designed layout
+- Carousel: Automatically displays Graphs one by one every 10 seconds.
+- Deck: Displays Graphs on one page as per designed layout
 
-> Graphs display as Carousel or Deck style in one category
+>Carousel or Deck display the Graphs of the selected category.
 
 ### Category
 
-As business requirement, create different category as tabs.
+Based on your business requirement, you can create different category as tabs.
 
-- At least one group (name: default)
-- Rename (double click)
+To create a new category, enable the Edit mode and then click Add Tab.
+In the Edit mode, you can also rename a category by double-clicking it.
 
 ### Flexiable layout
 
-In edit mode, you may create a very flexiable layout. Each block can be split by row or column. Then attach a Graph.
+In the Edit mode, you can create a flexiable layout. Each block can be split by row or column. Then, you can attach a Graph.
 
 - Split row
 - Split column
 - Attach a Graph
 - Remove last element
 
-> Remove function will remove its attached Graph or the last block. Block won't remove itself.
+> Removing a function will remove its attached Graph or the last block. Block cannot remove itself.
 
 ### Attach Graphs
 
-In edit mode, each block that has no sub block in layout, allow to attach a Graph.
+In the Edit mode, you can attach a Graph to any block that does not have a sub block in layout.
 
-> Graphs are created in `Graph module` by AMB admin
+> Graphs are created in `Graph module` by AMB Admin.
 
 ### Single Graph view
 
-Click each Graph's title, get a single view to display this Grpah with detail data.
+Click each Graph's title, get a single view to display this Grpah with details.
