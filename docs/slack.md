@@ -8,6 +8,5 @@ More discussion, please visit AM Browser slack channel:
 
 #### Not HPE employee
 
-Send mail to AM Browser PM, then we will invite you in AM Browser Slack channel.
-
-> sreenevas.subramaniam@hpe.com
+Network with HPE Asset manager product management and R&D team via AM Browser Slack channel. 
+Send in your [request](mailto:sreenevas.subramaniam@hpe.com?subject=Request%20to%20Access%20AM%20Browser%20Channel) today to access AM Browser Channel.
