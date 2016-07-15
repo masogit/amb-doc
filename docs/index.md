@@ -1,23 +1,29 @@
 # Asset Manager Browser
 
-HPE Asset Manager Browser (AMB) is a lightweight UI that leverages RESTful API layer to pull data from Asset Manager and simplifies the end user data consumption of ITAM data.
+HPE Asset Manager Browser (AM Browser) is a lightweight UI that leverages RESTful API layer to pull data from Asset Manager and simplifies the end user data consumption of ITAM data.
 
 ![Viewer screen shot](features/img/insight1.png)
 
 ### Features
 
-AMB provides you with the following features.
+AM Browser provides you with the following features:
+
+- Providing quick access to specific asset information
+- Create views in mins and expose the view to AM data consumers
+- Write AQL (AM query language) and get results you need in graphical format 
+- Monitor AM-UCMDB integration status
+- Message to specified channel of [Slack](https://slack.com/) group
 
 ![Features](img/features1.png)
 
 ### Use cases
 
-AMB provides you with the following use cases.
+AM Browser provides you with the following use cases.
 
 ![Usecases](img/usecases1.png)
 
 ### Roles
 
-AMB has 3 roles:
+AM Browser has 3 roles:
 
 ![Roles](img/roles.png)
