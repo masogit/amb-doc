@@ -1,5 +1,5 @@
 
-#Troubleshooting
+# Troubleshooting
 
 ### AM Browser server
 In case `http://<node_server_ip>:8888` does not work:
@@ -25,11 +25,34 @@ If the Node server is started up, but you cannot log on with the correct usernam
 
 If you still cannot figure out what is wrong with your configuration, you can pack your Node Log and Rest Log and send them to ambsupport@hpe.com.
 
-### Log
+### Message
+
+AM Browser will display messages and save details in `Message History` (Header > User menu > Message History). 
+
+Below are the message types:
+
+- Error
+    - User token of AM REST service expired
+    - Authentication problems
+    - Saved View / Graph / Insight is invalid
+    - Retrieve data from AM REST service failed
+- Success
+    - Create, update, delete data (View / Graph / Insight) successfully
+    - Send message to Slack successfully
+- Warning
+    - Preview AQL in Graph module, get unexpected data (Column between head and row inconsistent)
+- Confirmation
+    - Alert confirm window before create, update or delete data
+    - Duplicate view or New Graph
+
+> Error, Warning or Success message box will display 5 seconds by default. Click it to close.
+
+### Service Logs
 Log file folders
+
 - AM REST Server: <am-browser-rest>\apache-tomcat-8.0.36\logs
 - AM Browser Server: <am-browser>\log
 
 ### DSN (Data Source Name)
-As for DSN setup, refer to AM installation guide.
+As for DSN setup, refer to AM [installation](installation) guide.
 
