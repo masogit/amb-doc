@@ -42,7 +42,7 @@ Field:
 
 ### Functions
 
-The following functions are scoped in one link.
+The following functions effect in each link (Root or 1-M link).
 
 - Searchable
     - Only 2 fields in a link can be set to "searchable".
@@ -58,15 +58,18 @@ The following functions are scoped in one link.
 - Set alias
     - Set Alias name to replace the label displayed in the viewer.
 - Filter
-    - Specify AQL filter condition when query data.
-- Sort fileds
+    - Specify AQL filter condition when query data. Sample: `Name like '%ABC%' or AssetTag like'123ABC%'`
+
+- Sort fields
     - Adjust display order of fields.
 
 ### Others
 
-- Click each link title, AM schema sidebar will address the table directly.
+- Click each link title, AM schema side bar will address the table directly.
 - Export view definition as json file.
 - Share a view with guest users by sending a URL in email.
+
+> Define **My** view with `CurrentUser` in AQL filter, e.g.: `Portfolio.User=CurrentUser`, then share to guest users. They will query their own AM data.
 
 Video:
 

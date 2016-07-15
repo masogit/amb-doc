@@ -1,30 +1,48 @@
 # AM Browser configuration
 
-After you install AM Browser service and AM REST service, you need to use your own certificate files to overwrite the following certificate files in the ./ssh folder.
+### SSL
+
+After you install AM Browser service and AM REST service, you need to create your server certificate files and overwrite the following certificate files in the ./ssl folder.
 
 - server-cert.pem
-- server-csr.pem
 - server-key.pem
 
-Then, configure the following sections of the am-browser-config.properties file.
+Then, configure the following sections of the `am-browser-config.properties` file.
 
-### The [rest] section
+### AM Browser
+
+The [node] section contains the settings of the AM Browser service, it should resemble the following.
+
+```
+[node]
+server = 0.0.0.0
+port = 8080
+https_port = 8443
+session_max_age = 30
+enable_csrf = true
+```
+
+`port` and `https_port` are AM Browser service port. `session_max_age` is AM Browser server session timeout minutes. `enable_csrf` is a toggle for anti-csrf function.
+
+### AM REST
 
 The [rest] section contains the settings of the AM REST service for AM Browser, it should resemble the following.
 
 ```
 [rest]
 protocol = http
-server = localhost
+server = localhost 
 port = 10081
 base = /AssetManagerWebService/rs
 version = /v1
-jwt_max_age = 60
 ```
 
-> You do not need to change `base` and `version`. `jwt_max_age` is the AM REST token expire time in minutes.
+`server` is AM REST Server address, `port` is AM REST Service port
 
-### The [user] section
+> You do not need to change `base` and `version`.
+
+### Roles
+
 AM Browser has 3 user roles configured in the `am-browser-config.properties` file: Admin, Power User and Guest.
 
 ```
@@ -40,22 +58,22 @@ guest = @anyone
 
 You can assign one or several AM user profiles to `power` or `guest`, for example, SAM_Manager, Finance_manager.
 
-### The [slack] section
-AM Browser allows you to send message to the channel of Slack.com.
+### Slack
 
-Confiure the URL and channel name in the [slack] section so that the Slack function works.
+AM Browser allows you to send message to the channel of `Slack.com`. 
+
+Configure the URL and channel name in the [slack] section so that the Slack function works. 
 ```
 [slack]
 #url = https://hooks.slack.com/services/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
 channel = #betaprogram
+
+[proxy]
+host =
+port =
 ```
 
-### The [ucmdb] section
-
-AM Browser has two features that are related to HPE UCMDB:
-
-- Adpater: Monitor AM-UCMDB Adapters status
-- UCMDB Browser: Open the specified UCMDB Browser to federate CI information. This feature requires that the UCMDB CI is pushed with global_id.
+### UCMDB
 
 ```
 [ucmdb]
@@ -67,4 +85,4 @@ browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=e
 
 Setting `adapter` to `false` will disable UCMDB adapter monitor from AM Browser.
 
-When `GlobalId` field is added in the AMB view, on the detail page, you will see a link on GlobalId to open `UCMDB Browser`.
+> If AM REST Service doesn't configure UCMDB connection, Adapter module of AM Browser will not work.

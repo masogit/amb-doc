@@ -19,6 +19,10 @@ li a {
     color: #425563;
 }
 
+p a {
+    color: #2AD2C9;
+}
+
 a {
     color: #2AD2C9;
     text-decoration: none;
