@@ -4,6 +4,7 @@ Views created by Admin are displayed in the Viewer module.
 Power user can access views from the Viewer module, Guest user can access a view from URL.
 
 User can access a view and then query data from AM REST service. Below are areas in Views:
+
 - Header
 - Menu
 - Table
