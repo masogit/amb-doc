@@ -49,6 +49,19 @@ code {
     color: #900;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width: auto; 
+    }
+}
+
+@media (max-width: 800px) {
+    .nav>li>a {
+        padding-left: 12px;
+        padding-right: 13px;
+    }
+}
+
 /* readthedocs*/
 .wy-side-nav-search {
     background-color: #01A982;
