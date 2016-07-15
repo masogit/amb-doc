@@ -1,8 +1,10 @@
 
+#Troubleshooting
+
 ### Node server
 In case `http://<node_server_ip>:8888` does not work:
 
-1.	Open a command window and enter `services.msc`, Make sure there is an `HPE am-browser-service` service and make sure its status is "Running".
+1.	Open a command window and enter `services.msc`, make sure there is an `HPE am-browser-service` service and make sure its status is "Running".
 2.	Go to the `<node_server>\log` folder, open `ambrowser.log.YYYY-MM-DD` to check the detailed information.
 
 If you do not see the following messages in the log files, the `HPE am-browser-service` service is not installed correctly and you can try to re-install the service.

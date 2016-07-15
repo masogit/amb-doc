@@ -9,11 +9,11 @@ Currently, there are 3 types of Graph with designer. These graphs are built with
 - Meter: Bar, Arc, Circle, Spiral
 - Distribution
 
-> Only aggregation AQL query data can be configured in Graph designer
+> Only aggregation AQL query data can be configured in Graph designer.
 
 ### AQL data and configuration
 
-Admin user input aggregation AQL, like: `select seBasis, count(*) from amNature group by seBasis`
+Admin user inputs aggregation AQL, like: `select seBasis, count(*) from amNature group by seBasis`
 
 - Preview
 - Load from existing AM Widgets
@@ -21,17 +21,17 @@ Admin user input aggregation AQL, like: `select seBasis, count(*) from amNature 
 - Link to a view
 
 #### Load widgets
-It allows to import existing In Tool Report AQL from AM server directly.
+It allows you to import existing AM Widget AQL from the AM server directly.
 
 #### Preview
 
-After input aggregation AQL then preview, you will get a table display query result. It should have some columns:
+After inputing aggregation AQL, you can use Preview to get a query result. It should have some columns.
 
 > It is suggested to have the first column as the group by field and the second column as count(*) or sum(<field name>).
 
 #### Configure Graph designer
 
-After get a query result table with some columns,  you can create a graph from Graph designer. Specify **`Column`** of Graph designer from one of columns in the query result table.
+After getting a query result table with some columns,  you can create a graph from Graph designer. Specify **`Column`** of Graph designer from one of columns in the query result table.
 
 - **Column** (mandatory)
 - label (mandatory if link to view)
@@ -47,9 +47,9 @@ After get a query result table with some columns,  you can create a graph from G
 
 #### Link to a view
 
-Attach a graph with a view, then allow to click an element. There is a page will popup and show records list as filtered result. Here is a simple rule when you provide AQL:
+Attach a graph with a view, then you can click an element. A page will pop up and show records list as filtered result. Here is a simple rule when you provide AQL:
 
-> **The column is selected as label in Graph designer, that name will be as a condition filter pass to view**  
+> **The column is selected as label in Graph designer, that name will be used as a condition filter passed to view**  
 
 For example:
 ```

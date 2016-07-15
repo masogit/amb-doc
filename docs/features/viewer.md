@@ -17,7 +17,7 @@ User can access a view and then query data from AM REST service. Below are areas
         - Input by pressing enter: Filter from back-end (**View must have defined searchable fields**)
     - Advanced search (Input AQL filters)
         - Enable or disable toggle from menu
-        - Enable or disable toggle by input '/' as first character
+        - Enable or disable toggle by input '/' as the first character
         - Display added AQL filters below the input box
 
         Sample: `Name like '%ABC%' or AssetTag like'123ABC%'`

@@ -11,7 +11,7 @@ Fields and links are selected from AMB Build Schema. When a root table is select
 - 1-1 Links
 - Fields
 
-All fields or 1-1 link's fields will be added in the same link. When querying data from this view, these fields are queryed and displayed together. For example:
+All fields or 1-1 link's fields will be added in the same link. When querying data from this view, these fields are queried and displayed together. For example:
 
 ```
 Root table: 
