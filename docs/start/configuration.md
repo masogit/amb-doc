@@ -9,7 +9,7 @@ After you install AM Browser service and AM REST service, you need to create you
 
 Then, configure the following sections of the `am-browser-config.properties` file.
 
-### AM Browser
+### AM Browser service
 
 The [node] section contains the settings of the AM Browser service, it should resemble the following.
 
@@ -24,7 +24,7 @@ enable_csrf = true
 
 `port` and `https_port` are AM Browser service port. `session_max_age` is AM Browser server session timeout minutes. `enable_csrf` is a toggle for anti-csrf function.
 
-### AM REST
+### AM REST service
 
 The [rest] section contains the settings of the AM REST service for AM Browser, it should resemble the following.
 
@@ -41,7 +41,7 @@ version = /v1
 
 > You do not need to change `base` and `version`.
 
-### Roles
+### AM Browser Roles
 
 AM Browser has 3 user roles configured in the `am-browser-config.properties` file: Admin, Power User and Guest.
 
@@ -74,6 +74,11 @@ port =
 ```
 
 ### UCMDB
+AM Browser has 2 features related to UCMDB, reference Features/Adapter chapter.
+
+- Monitor Adapter
+- UCMDB Browser
+
 
 ```
 [ucmdb]

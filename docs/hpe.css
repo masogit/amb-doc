@@ -49,16 +49,13 @@ code {
     color: #900;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1000px) {
     .container {
         width: auto; 
     }
-}
-
-@media (max-width: 800px) {
     .nav>li>a {
-        padding-left: 12px;
-        padding-right: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
