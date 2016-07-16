@@ -1,7 +1,9 @@
-site_name: Asset Manager Browser
+site_name: AM Browser
 site_favicon: favicon.ico
 site_author: shuo.man@hpe.com
 site_description: HPE Asset Manager online document
+repo_url: https://hpln.hpe.com/contentoffering/am-browser
+repo_name: Download
 
 pages:
 - Overview: index.md
