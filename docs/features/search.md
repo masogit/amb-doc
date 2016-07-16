@@ -18,7 +18,7 @@ You will get a table that displays the summary of search results:
 #### Results areas
 Each result is displayed as a Card/Tile including: 
 - View name
-- Each record's title (Column: Self)
+- Each title of result (Column: Self)
 - Contents with search keyword highlight
 
 ![Card](img/card.png)

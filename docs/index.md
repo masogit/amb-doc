@@ -1,6 +1,6 @@
 # Asset Manager Browser
 
-HPE Asset Manager Browser (AM Browser) is a lightweight UI that leverages RESTful API layer to pull data from Asset Manager and simplifies the end user data consumption of ITAM data.
+HPE Asset Manager Browser (AM Browser) is a lightweight UI that leverages RESTful API layer to pull data from HPE Asset Manager and simplifies the end user data consumption of ITAM data.
 
 ![Viewer screen shot](features/img/insight1.png)
 
@@ -20,7 +20,7 @@ AM Browser provides you with the following features:
 
 AM Browser provides you with the following use cases.
 
-![Usecases](img/usecases1.png)
+![Use cases](img/usecases1.png)
 
 ### Roles
 
