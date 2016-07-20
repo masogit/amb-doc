@@ -90,4 +90,4 @@ browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=e
 
 Setting `adapter` to `false` will disable UCMDB adapter monitor from AM Browser.
 
-> If AM REST Service doesn't configure UCMDB connection, Adapter module of AM Browser will not work.
+> If AM REST Service does not configure the UCMDB connection, Adapter module of AM Browser will not work.

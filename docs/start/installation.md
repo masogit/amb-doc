@@ -17,7 +17,7 @@ AM Browser has the following two services.
 
 ### Deployment
 
-It's recommended that AM Browser connects to a **Standby RDBMS**.
+It is recommended that AM Browser connects to a **Standby RDBMS**.
 
 ![Deploy diagram](img/AMB_1.0_Standalone.png)
 

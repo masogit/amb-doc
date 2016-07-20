@@ -25,11 +25,11 @@ It allows you to import existing AM Widget AQL from the AM server directly.
 
 #### Preview
 
-After input aggregation AQL, you can use Preview to get a query result. It should have some columns.
+After you input aggregation AQL, you can use Preview to get a query result. It should have some columns.
 
 > It is suggested to have the first column as the group by field and the second column as `count(*)` or `sum(<field name>)`.
 
-> Some AQL functions can't work currently, for example: `IsNull`
+> Some AQL functions can not work currently, for example: `IsNull`
 
 #### Configure Graph designer
 

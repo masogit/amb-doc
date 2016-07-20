@@ -9,7 +9,7 @@ AM Browser has two features that are related to HPE UCMDB:
 
 AM Admin user often needs to log on to UCMDB to check AM apdaters status. Now you can monitor AM adapters in AM Browser.
 
-Before the AM REST service starts, you need to configure the UCMDB information in the `package.properties`:
+Before the AM REST service starts, you need to configure the UCMDB information in `package.properties`:
 
 ```
 # Configurations for push adapter monitor
