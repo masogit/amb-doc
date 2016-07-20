@@ -27,9 +27,9 @@ If you still cannot figure out what is wrong with your configuration, you can pa
 
 ### Message
 
-AM Browser will display messages and save details in `Message History` (Header > User menu > Message History). 
+AM Browser displays messages and saves details in `Message History` (Header > User menu > Message History). 
 
-Below are the message types:
+Message types are as follows:
 
 - Error
     - User token of AM REST service expired
