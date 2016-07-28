@@ -43,6 +43,8 @@ It is recommended that AM Browser connects to a **Standby RDBMS**.
     - UCMDB connection. Make sure `UCMDB.Server.Host`, `UCMDB.Server.Port`, `UCMDB.Server.User` and `UCMDB.Server.Password` are set correctly.
     - Server port. If 10081, the default port of the REST Service, is occupied, modify am-browser-rest\apache-tomcat-8.0.36\conf\server.xml to set another port.
 
+    > Set `PushAdapter.Monitor.Enabled` to `true` to provide UCMDB Adapter REST API for AM Browser Adapter module.
+     
 1. (Optional) Generate key files.
     
     - If the server instance is for temporary trial only, you can skip this step and it will use the default files.
