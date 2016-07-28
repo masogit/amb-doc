@@ -40,11 +40,9 @@ It is recommended that AM Browser connects to a **Standby RDBMS**.
     Go to the am-browser-rest\websvc folder, duplicate the `package.properties.default` file and rename the copy as `package.properties`. In the `package.properties`:
 
     - DB connection. Make sure the database information such as `DB.datasource`, `DB.login` and `DB.password` is set correctly. Tips: You can refer to AM web service server’s package.properties file as it uses the same settings.
-    - UCMDB connection. Make sure `UCMDB.Server.Host`, `UCMDB.Server.Port`, `UCMDB.Server.User` and `UCMDB.Server.Password` are set correctly.
+    - UCMDB connection. Make sure `PushAdapter.Monitor.Enabled`, `UCMDB.Server.Host`, `UCMDB.Server.Port`, `UCMDB.Server.User` and `UCMDB.Server.Password` are set correctly.
     - Server port. If 10081, the default port of the REST Service, is occupied, modify am-browser-rest\apache-tomcat-8.0.36\conf\server.xml to set another port.
 
-    > Set `PushAdapter.Monitor.Enabled` to `true` to provide UCMDB Adapter REST API for AM Browser Adapter module.
-     
 1. (Optional) Generate key files.
     
     - If the server instance is for temporary trial only, you can skip this step and it will use the default files.
