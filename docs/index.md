@@ -16,9 +16,13 @@ AM Browser provides you with the following features:
 
 ![Features](img/features1.png)
 
+Below are four features and relations:
+
+![Core](img/core1.png)
+
 ### Use cases
 
-AM Browser provides you with the following use cases.
+AM Browser provides you with the following use cases:
 
 ![Use cases](img/usecases1.png)
 
