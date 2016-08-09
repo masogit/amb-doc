@@ -5,6 +5,8 @@ AM Browser has two features that are related to HPE UCMDB:
 - Adapter: Monitor AM-UCMDB Adapters status
 - UCMDB Browser: Open the specified UCMDB Browser to federate CI information. This feature requires that the UCMDB CI is pushed with global_id.
 
+![AM Adapters](img/adapter1.png)
+
 ### Monitor AM Adapters status
 
 AM Admin user often needs to log on to UCMDB to check AM apdaters status. Now you can monitor AM adapters in AM Browser.
