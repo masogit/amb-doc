@@ -91,3 +91,27 @@ browser_param = /ucmdb-browser/ucmdb_widget.jsp?server=Default%20Client&locale=e
 Setting `adapter` to `false` will disable UCMDB adapter monitor from AM Browser.
 
 > If AM REST Service does not configure the UCMDB connection, Adapter module of AM Browser will not work.
+
+### Environment Parameters
+There are some system environment parameters used by AM Browser. The priority is: `Environment Parameters > am-browser-config.properties > am-browser-config.properties.default`
+
+Configure in different system:
+
+- Unix/Linux - `export AMB_XXX=XXX`
+- Windows - `set AMB_XXX=XXX`
+
+Environment Parameters | AM Browser Properties | Comments
+---|---|---
+NODE_ENV | -- | `production` or `development`
+AMB_REST_SERVER | rest.server
+AMB_REST_PORT | rest.port
+AMB_REST_PROTOCOL | rest.protocol | `http` or `https`
+AMB_NODE_SERVER | node.server
+AMB_NODE_PORT | node.port
+AMB_REST_HTTPS_PORT | node.https_port | `http` or `https`
+AMB_SESSION_MAX_AGE | node.session_max_age | (minutes)
+AMB_JWT_MAX_AGE | rest.jwt_max_age | (minutes)
+AMB_NODE_DEBUG | node.is_debug | `true` or `false`
+AMB_NODE_CSRF | node.enable_csrf | `true` or `false`
+
+> Set `NODE_ENV=production` will improve AM Browser Service performance highly
