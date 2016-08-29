@@ -1,5 +1,18 @@
 # AM Browser Blog
 
+### Change logs
+
+- **1.0 Update 1**
+    - Save customized settings of Viewer in Web Browser
+    - Confirmation before leaving page with unsaved data (Insight/Builder/Graph)
+    - Avoid concurrency query data before data return
+    - Optimized UCMDB Adapter
+    - Fix a stability issue of REST API
+    - Fix some usability issues
+
+- 1.0
+    - Release
+
 ### News
 
 - [New Asset Manager 9.6 and Asset Manager Browser: New UX makes asset management easier than ever](http://community.hpe.com/t5/IT-Service-Management/New-Asset-Manager-9-6-and-Asset-Manager-Browser-New-UX-makes/ba-p/6877256#.V4QgqvkrKM8 )
@@ -10,11 +23,16 @@
 
 ### Document update
 
+- **2016.09.01**
+
+    - Add `Change logs` chapter in Blogs
+    - Remove `Optional` before `Generate key files` from [Installation](start/installation/#installation-of-am-rest-service-for-the-first-time)
+
 - **2016.08.08**
 
     - Add feature relation picture in [Overview](/#features)
     - Add System `Environment Parameter` chapter in [Configuration](start/configuration/#environment-parameters)
-    - Add `Document update` chapter in Blog Chapter
+    - Add `Document update` chapter in Blogs Chapter
 
 - **2016.07.15**
 

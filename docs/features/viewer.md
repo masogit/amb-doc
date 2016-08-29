@@ -10,6 +10,8 @@ User can access a view and then query data from AM REST service. Below are areas
 - Table
 - Detail and links
 
+> All settings on a view will be saved in Web Browser's localStorage.
+
 ### Header
 - Title
 - Search and filter box
