@@ -95,7 +95,7 @@ Setting `adapter` to `false` will disable UCMDB adapter monitor from AM Browser.
 ### Environment Parameters
 There are some system environment parameters used by AM Browser. The priority is: `Environment Parameters > am-browser-config.properties > am-browser-config.properties.default`
 
-Configure in different system:
+Configure in different systems:
 
 - Unix/Linux - `export AMB_XXX=XXX`
 - Windows - `set AMB_XXX=XXX`
@@ -114,4 +114,4 @@ AMB_JWT_MAX_AGE | rest.jwt_max_age | (minutes)
 AMB_NODE_DEBUG | node.is_debug | `true` or `false`
 AMB_NODE_CSRF | node.enable_csrf | `true` or `false`
 
-> Set `NODE_ENV=production` will improve AM Browser Service performance highly
+> Setting `NODE_ENV=production` will significantly improve the performance of the AM Browser Service.
