@@ -3,12 +3,12 @@
 ### Change logs
 
 - **1.0 Update 1**
-    - Save customized settings of Viewer in Web Browser
-    - Confirmation before leaving page with unsaved data (Insight/Builder/Graph)
-    - Avoid concurrency query data before data return
-    - Optimized UCMDB Adapter
-    - Fix a stability issue of REST API
-    - Fix some usability issues
+    - Customized settings of Viewer can be saved in web browser.
+    - A confirmation box appears when you try to leave the page with unsaved data (Insight/Builder/Graph).
+    - Concurrency query data is avoided before data is returned.
+    - UCMDB Adapter is optimized.
+    - A stability issue of REST API is fixed.
+    - Some usability issues are fixed.
 
 - 1.0
     - Release
