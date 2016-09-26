@@ -15,6 +15,8 @@ AM Browser has the following two services.
 - AM Browser Service that provides user interface.
 - AM REST Service that provides AM fundamental data service.
 
+> Please make sure you always use the REST Service shipped with AM Browser to get the best compatibility.
+
 ### Deployment
 
 It is recommended that AM Browser connects to a **Standby RDBMS**.
