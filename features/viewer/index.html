@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Viewer - Asset Manager Browser</title>
+      
+      
+      
+      
+        <meta name="author" content="shuo.man@hpe.com">
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Asset Manager Browser">
+    <meta property="og:image" content="None/../../logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Asset Manager Browser">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../logo.svg">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../../../logo.svg">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-e576885f03.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-2d6c5d2926.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../hpe.css">
+    
+    <script src="../../assets/javascripts/modernizr-2216498cab.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Features <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Viewer
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://hpln.hpe.com/contentoffering/am-browser" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../logo.svg">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Asset Manager Browser
+          <span class="version">
+            1.1
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Overview" href="../..">
+      Overview
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Getting Started</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Installation" href="../../start/installation/">
+      Installation
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Upgrade and Migration" href="../../start/upgrade/">
+      Upgrade and Migration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Configuration" href="../../start/configuration/">
+      Configuration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Troubleshooting" href="../../start/troubleshooting/">
+      Troubleshooting
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Security" href="../../start/security/">
+      Security
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="FAQ" href="../../start/faq/">
+      FAQ
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Features</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Search" href="../search/">
+      Search
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Insight" href="../insight/">
+      Insight
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="Viewer" href="./">
+      Viewer
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="WorkSpace" href="#workspace">
+                WorkSpace
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Distribution" href="#distribution">
+                Distribution
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <span class="section">Builder</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="View" href="../builder/view/">
+      View
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Graph" href="../builder/graph/">
+      Graph
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Template" href="../builder/template/">
+      Template
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="SAM" href="../sam/">
+      SAM
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="My Assets" href="../myassets/">
+      My Assets
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Adapter" href="../adpater/">
+      Adapter
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Sizing Guide</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introduction" href="../../sizing/introduction/">
+      Introduction
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Sizing Questions" href="../../sizing/sizing_questions/">
+      Sizing Questions
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Deployment Modes and Sizing" href="../../sizing/deployment_modes_and_sizing/">
+      Deployment Modes and Sizing
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Rules of thumb" href="../../sizing/rule_of_thumb/">
+      Rules of thumb
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix A - Asset Manager Browser benchmark performance test results" href="../../sizing/appendix_a/">
+      Appendix A - Asset Manager Browser benchmark performance test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix B - Asset Manager Browser processing capability test results" href="../../sizing/appendix_b/">
+      Appendix B - Asset Manager Browser processing capability test results
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark" href="../../sizing/appendix_c/">
+      Appendix C - Asset Manager Browser sample deployment configuration and tuning for benchmark
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix D - Database volume size of sample deployment" href="../../sizing/appendix_d/">
+      Appendix D - Database volume size of sample deployment
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Appendix E - Links" href="../../sizing/appendix_e/">
+      Appendix E - Links
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Community</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Slack" href="../../slack/">
+      Slack
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Blogs" href="../../blogs/">
+      Blogs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="am-browser-viewer">AM Browser Viewer</h1>
+<p>Viewer module is one of the core functionalities AM Browser has provided. Through views, user are able to see specific reports formed by pre selected fields.
+Before views can be accessed, they have to be defined by admin user first.</p>
+<p>Three types of user using views:</p>
+<ul>
+<li>Admin user - They can create, modify, delete views and review result of view</li>
+<li>Power user - They have only viewing rights to the views defined by admin user</li>
+<li>Guest user - Guest user access views through url address, which is published by above two types user</li>
+</ul>
+<h2 id="workspace">WorkSpace</h2>
+<p>The workspace of view contains three major areas in center area of the page:</p>
+<ul>
+<li>Statistics Area</li>
+<li>Header Menu</li>
+<li>Content</li>
+</ul>
+<blockquote>
+<p>All settings made on a view will be saved in Web Browser's localStorage.<br />
+Settings include order by, group by parameters and mode of topology or table for the content etc.</p>
+</blockquote>
+<h3 id="statistics-area">Statistics Area</h3>
+<p>This area intends to showing statistics data of group by result. It can show the result as two mode:</p>
+<ul>
+<li>Legend mode  <ul>
+<li>Located at left side panel of Content</li>
+<li>Show a statistics list table with fields chosen to be group by, quantity and a number of total at footer</li>
+<li>Contain switch button to distribution mode on the up-right corner</li>
+</ul>
+</li>
+<li>Distribution mode<ul>
+<li>Show statistics result in blocks and distribution way</li>
+<li>Has a switch button on the up-right corner back to list table mode</li>
+<li>Check out more details in the Distribution section</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-menu">Header menu</h3>
+<p>A header menu at the bottom of Header navigation contains following components from left to right:</p>
+<ol>
+<li>Title</li>
+<li>
+<p>Search Input and Search Tags  </p>
+<ul>
+<li>Instant search<ul>
+<li>Type in simply: AM Browser allows you to filter records in the loaded table or topology nodes according to input keywords.</li>
+</ul>
+</li>
+<li>Quick search<ul>
+<li>Type in and press 'Enter' then: Filtering from back-end, AM Browser sends formed search query to AM web service to require matching records. It refreshes table or topology nodes with returned results (<strong>View must have defined searchable fields</strong>)</li>
+</ul>
+</li>
+<li>
+<p>Advanced search (Input AQL filters)</p>
+<ul>
+<li>Available to Admin and Power user only</li>
+<li>Switch enable and disable mode by pressing toggle button or input '/' as first character</li>
+<li>
+<p>Searched AQL filters are displayed below the search input</p>
+<p>Sample: <code>Name like '%ABC%' or AssetTag like'123ABC%'</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Search tag button</p>
+<ul>
+<li>Display field name by default, but if the field has alias, display alias then</li>
+<li>Each of them can be disabled. Disabled tags are excluded from searching condition</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Record Number and response time button</p>
+<ul>
+<li>Records number<ul>
+<li>Number of loaded records</li>
+<li>Total number of existing records</li>
+<li><strong>Click to get the data on the next page (30 records)</strong></li>
+</ul>
+</li>
+<li>REST response time  </li>
+</ul>
+</li>
+<li>
+<p>Group by filter menu</p>
+<ul>
+<li>Aggregation - Display aggregation detail, user can know which AM table as view root and aggregation type: count or sum</li>
+<li>Order by - Display default order by and sequence</li>
+<li>Query aggregation - Click one fields, query aggregation data from REST service, result will display in Aggregation area. Allow to cancel aggregation result by click field again  </li>
+</ul>
+</li>
+<li>
+<p>Topology/List mode switch button<br />
+    AM Browser either display contents as list table or topology nodes according to the status of this switching button. By default, AM Browser display the result in table mode.</p>
+</li>
+<li>
+<p>Misc Menu</p>
+<ul>
+<li>Full column - In Table mode, default number of columns are 5, enable full column toggle to display all fields defined for the view.</li>
+<li>Download CSV - Download records in current contents as CSV file.</li>
+<li>Download PDF<ul>
+<li>Available to all types of user</li>
+<li>Allow you to apply defined PDF report template of Personal (defined and owned by yourself) and Public</li>
+<li>In the pop up PDF template layer, AM Browser opens all functionalities of PDF template module to you. e.g. create a new templates, modify existing one, duplicate from a public template</li>
+<li>Generate PDF for record list with aggregation data, without any sub links contents</li>
+</ul>
+</li>
+<li>Print BarCode<ul>
+<li>Before printing, AM Browser allows you to apply a template within a template management layer</li>
+<li>Open all functionalities of PDF template in template management layer</li>
+<li>Sync all changes with PDF template management module</li>
+<li>Number of preview records is changeable as need. Number of it needs to large than 1.</li>
+<li>Fields to be used for Bar code generating are definable<blockquote>
+<p>Note: The BarCode printing function only available in Chrome.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="content">Content</h3>
+<p>Under header menu, it is the content of report data retrieved from AM web service. It has two modes:</p>
+<ul>
+<li>Table(default mode)</li>
+<li>Topology<blockquote>
+<p>Switch mode by clicking on Topology/table mode switch button from header menu.<br />
+By default, AM Browser displays result in table mode</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="table-mode">Table mode</h4>
+<ul>
+<li>Header:<ul>
+<li>Render Fields name and along with order by icon if the column is chosen to be order by</li>
+<li>Display Header by label name of field by default, but if it has alias, display alias then</li>
+<li>To sort, you can click on fields name</li>
+</ul>
+</li>
+<li>
+<p>Column</p>
+<ul>
+<li>By default, 5 columns are displayed.</li>
+<li>Click a record to show detail.</li>
+<li>To load more records in, you can either scroll down to bottom of page or click record number and response time button from header menu</li>
+</ul>
+<p><img alt="Viewer screen shot" src="../img/viewer1.png" /></p>
+</li>
+<li>
+<p>Detail   <br />
+ When clicking on a record, there will be a popup window from the right side. In the popup window, all fields defined in view will be displayed vertically.
+ And all 1-M links defined in the view will be displayed as a Tab page.</p>
+<ul>
+<li>Display all fields</li>
+<li>Display sub links</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Viewer screen shot" src="../img/detail1.png" /></p>
+<h4 id="topology-mode">Topology mode</h4>
+<ul>
+<li>Display a map of links</li>
+<li>Display each record as a node which renders an icon according to the type of equipment and text from self description of the record</li>
+</ul>
+<p><img alt="Viewer screenshot in topology mode" src="../img/viewer2.png" /></p>
+<ul>
+<li>Detail  <ul>
+<li>To find out the detail of a node, click on the node switching to detail page. That page displays a tree map rendering links of record have</li>
+<li>Click on a link, AM Browser either expands the link (if the link has child links) or display all fields on the right side panel</li>
+<li>Download PDF on the right side panel, functioning same as in table mode, allows you to export the record into a pdf file
+  <img alt="Detail record in topology mode" src="../img/detail2.png" /></li>
+</ul>
+</li>
+</ul>
+<h2 id="distribution">Distribution</h2>
+<p>AM Browser Viewer provides a colorful and bright distribution graph to display group by statistics. It also provides a fast group by and filter functions.</p>
+<ul>
+<li>Distribution Graph<ul>
+<li>Horizontal (default)</li>
+<li>Vertical (enable from menu)</li>
+<li>Allow to click each element as a filter</li>
+</ul>
+</li>
+<li>Group by<ul>
+<li>Default group by field defined in view</li>
+<li>Select a field from filter menu manually</li>
+</ul>
+</li>
+<li>Filter<ul>
+<li>Display AQL filters that added by user</li>
+<li>Allow to multiple filters, condition is 'AND'</li>
+</ul>
+</li>
+</ul>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../insight/" title="Insight">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Insight
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../builder/view/" title="View">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                View
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-82b5011116.js"></script>
+    
+    
+  </body>
+</html>
